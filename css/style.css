@@ -246,3 +246,14 @@ textarea {
         flex-wrap: wrap;
     }
 }
+
+
+.home-shortcut a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.home-shortcut a:hover {
+    text-decoration: underline;
+}
