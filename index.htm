@@ -2,103 +2,144 @@
 <html lang="en">
 
 <head>
-    <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GBPIET | Govind Ballabh Pant Institute of Engineering & Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td>
-                <img src="https://th.bing.com/th/id/OIP.89ElIJaEkG2pio2suVROhwHaIM?w=159&h=180&c=7&r=0&o=5&pid=1.7" alt="html"
-                length="50" width="250" />
-            </td>
-            <td>
-                <h1><strong>Govind Ballabh Pant College Pauri Gharwal</strong></h1>
-            </td>
-        </tr> 
-    </table>
-    <p>
-        <em>Click to visit
-            <strong><a href="http://www.gbpec.ac.in/">College site</a> </strong></em>
-    </p>
-    <p>
-        <em>Click to visit
-            <strong><a href="contact.html">Contact Infoprmation</a> </strong></em>
-    </p>
-    <hr size="3" noshade="==$" />
-    <h2>College departments</h2>
-    <ul type="i">
-        <li>
-            <strong><a href="http://www.gbpec.ac.in/departments/cse.php">Computer Science Deparment</a></strong>
-        </li>
-        <li>
-            <strong><a href="http://www.gbpec.ac.in/departments/bt.php">Biotechnology</a></strong>
-        </li>
-        <li>
-            <strong><a href="http://www.gbpec.ac.in/departments/ce.php">Civil Engineering</a></strong>
-        </li>
-    </ul>
-    
-    <hr size="3" noshade />
-    <h2>Faculty</h2>
-    <table border="1" cellspacing="1">
-        <thead>
-            <th>Department</th>
-            <th>HOD</th>
-        </thead>
-        <tr>
-            <td>Computer Science</td>
-            <td>H.C Badoria</td>
-        </tr>
-        <tr>
-            <td>Electrical</td>
-            <td>A.K Gautam</td>
-        </tr>
-        <tr>
-            <td>Electonics</td>
-            <td>Yashwant Singh</td>
-        </tr>
-    </table>
-    <br>
-    <hr size="3" noshade>
-    <h3>Hangout Places</h3>
-    <table border="1" cellspacing="1">
-        <thead>
-            <th>
-                Places
-            </th>
-            <th>
-                Rating
-            </th>
-        </thead>
-        <tr>
-            <td>
-                A.V Resturant
-            </td>
-            <td>
-                ⭐⭐⭐⭐⭐
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Netscafe
-            </td>
-            <td>
-                ⭐⭐⭐
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Burger King
-            </td>
-            <td>
-                ⭐⭐⭐⭐
-            </td>
-        </tr>
-    </table>
+    <header class="topbar">
+        <div class="container topbar-content">
+            <p>Ghurdauri Campus, Pauri Garhwal, Uttarakhand • +91-1368-228030</p>
+            <a href="contact.html">Contact Directory</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a class="brand" href="index.htm">
+                <img src="assets/logo.svg" alt="GBPIET logo" />
+                <span>GBPIET</span>
+            </a>
+            <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
+            <ul id="mainMenu" class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#notices">Notices</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <p class="eyebrow">Govind Ballabh Pant Institute of Engineering & Technology</p>
+                <h1>Engineering Education Inspired by the Himalayas</h1>
+                <p class="lead">A refreshed campus portal inspired by the official college website style, focused on academic updates, admissions, and student services.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#admissions">Apply Now</a>
+                    <a class="btn btn-secondary" href="#notices">Latest Notices</a>
+                </div>
+            </div>
+            <img class="hero-image" src="assets/campus.svg" alt="GBPIET Campus" />
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container cards">
+                <article class="card">
+                    <h2>Institute Overview</h2>
+                    <p>GBPIET provides UG and PG programs in engineering and technology with strong emphasis on innovation, research, and practical learning.</p>
+                    <a href="https://www.gbpec.ac.in/" target="_blank" rel="noopener noreferrer">Visit Official Website</a>
+                </article>
+                <article class="card">
+                    <h2>Academic Calendar</h2>
+                    <p>Get important semester dates, exam schedules, and holiday notifications in one place.</p>
+                    <a href="#notices">Check Updates</a>
+                </article>
+                <article class="card">
+                    <h2>Student Support</h2>
+                    <p>Find quick access to scholarships, anti-ragging resources, and placement cell information.</p>
+                    <a href="contact.html">Get Help</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="departments" class="section alt">
+            <div class="container">
+                <h2 class="section-title">Departments</h2>
+                <div class="departments-grid">
+                    <a class="dept" href="https://www.gbpec.ac.in/departments/cse.php" target="_blank" rel="noopener noreferrer">Computer Science Engineering</a>
+                    <a class="dept" href="https://www.gbpec.ac.in/departments/ce.php" target="_blank" rel="noopener noreferrer">Civil Engineering</a>
+                    <a class="dept" href="https://www.gbpec.ac.in/departments/ee.php" target="_blank" rel="noopener noreferrer">Electrical Engineering</a>
+                    <a class="dept" href="https://www.gbpec.ac.in/departments/me.php" target="_blank" rel="noopener noreferrer">Mechanical Engineering</a>
+                    <a class="dept" href="https://www.gbpec.ac.in/departments/ece.php" target="_blank" rel="noopener noreferrer">Electronics & Communication</a>
+                    <a class="dept" href="https://www.gbpec.ac.in/departments/bt.php" target="_blank" rel="noopener noreferrer">Biotechnology</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="notices" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Notices</h2>
+                    <input id="noticeSearch" type="search" placeholder="Filter notices..." aria-label="Filter notices" />
+                </div>
+                <ul id="noticeList" class="notice-list">
+                    <li data-keywords="exam semester midterm">Mid Semester Examination schedule published for B.Tech 4th semester.</li>
+                    <li data-keywords="hostel registration fee">Hostel registration portal opens from 15 July to 25 July.</li>
+                    <li data-keywords="placement training aptitude">Placement preparation bootcamp starts next Monday in Seminar Hall.</li>
+                    <li data-keywords="scholarship state government">State scholarship verification window extended till 30 August.</li>
+                </ul>
+                <p id="noResults" class="no-results" hidden>No notices match your search.</p>
+            </div>
+        </section>
+
+        <section id="admissions" class="section alt">
+            <div class="container split">
+                <div>
+                    <h2 class="section-title">Admissions 2026</h2>
+                    <p>Admissions are based on JEE score and counseling as per Uttarakhand Technical University guidelines.</p>
+                    <ul class="checklist">
+                        <li>Online registration and document upload</li>
+                        <li>Merit list publication and counseling rounds</li>
+                        <li>Fee payment and physical verification</li>
+                    </ul>
+                </div>
+                <form id="admissionForm" class="apply-form" novalidate>
+                    <h3>Request Admission Guidance</h3>
+                    <label>Name<input type="text" name="name" required /></label>
+                    <label>Email<input type="email" name="email" required /></label>
+                    <label>Program
+                        <select name="program" required>
+                            <option value="">Select program</option>
+                            <option>B.Tech</option>
+                            <option>M.Tech</option>
+                            <option>MCA</option>
+                        </select>
+                    </label>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <p id="formMessage" class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <p>© 2026 GBPIET, Pauri Garhwal</p>
+            <a href="https://www.gbpec.ac.in/" target="_blank" rel="noopener noreferrer">Official Portal</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
