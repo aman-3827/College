@@ -246,8 +246,6 @@ textarea {
         flex-wrap: wrap;
     }
 }
-
-
 .home-shortcut a {
     color: var(--primary);
     font-weight: 600;
