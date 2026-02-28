@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <center>
-    <h3><strong>Contact informations</strong></h3>
-    </center>
-    <hr size="1" noshade>
-    <h2>Director</h2>  
-        <p>Dr. Yashvir Singh
-            Govind Ballabh Pant Institute of Engineering & Technology
-            Pauri Garhwal, Uttarakhand
-            Phone - 01368-228030
-            Fax: 01368- 228062
-            Email: principalgbpecpauri@gmail.com</p>
-    <hr size="1" noshade>
-    <h2>Rigistrar</h2>
-        <p>Dr. V.N Kala
-        Govind Ballabh Pant Institute of Engineering & Technology
-        Pauri Garhwal, Uttarakhand
-        Phone - 01368-228048
-        Fax: 01368- 228062 Email:- vnkala.67@ rediff.com
-        </p>
-    <hr size="1" noshade>
-    <h2>Address</h2>
-    <p>Govind Ballabh Pant Institute of Engineering & Technology
-        Ghurdauri, Pauri Garhwal, Uttarakhand
-        Pin- 246194
-        Fax: 01368- 228062
-        Email: principalgbpecpauri@gmail.com
-        Website: www.gbpec.ac.in</p>
-    <body>
-        <form class="" action="mailto:kumaramanddn390@gmail.com" method="post">
-            <label>
-               Your Name:
-            </label>
-            <input type="Text" name="YourName" value="">
-            <input type="submit" name="">
-            <br>
-            <label>
-                Your Email:
-            </label>
-            <input type="text" name="YourEmail" value="">
-            <input type="submit" name="">
-            <br>
-            <label>
-                Your Message:
-            </label>
-            <br>
-            <textarea name="yourMessage" rows="8" cols="80"></textarea>
-            <input type="submit" name="">
-        </form>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GBPIET Contact Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-content">
+            <p>Support Desk • Mon-Sat 10:00 AM to 5:00 PM</p>
+            <a href="index.htm">Back to Home</a>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title">Contact Information</h1>
+            <div class="cards">
+                <article class="card">
+                    <h2>Director</h2>
+                    <p>Dr. Yashvir Singh<br />
+                        Govind Ballabh Pant Institute of Engineering & Technology<br />
+                        Pauri Garhwal, Uttarakhand<br />
+                        Phone: 01368-228030<br />
+                        Fax: 01368-228062</p>
+                </article>
+                <article class="card">
+                    <h2>Registrar</h2>
+                    <p>Dr. V. N. Kala<br />
+                        Govind Ballabh Pant Institute of Engineering & Technology<br />
+                        Pauri Garhwal, Uttarakhand<br />
+                        Phone: 01368-228048<br />
+                        Email: vnkala.67@rediffmail.com</p>
+                </article>
+                <article class="card">
+                    <h2>Address</h2>
+                    <p>Ghurdauri, Pauri Garhwal<br />
+                        Uttarakhand, Pin 246194<br />
+                        Email: principalgbpecpauri@gmail.com<br />
+                        Website: www.gbpec.ac.in</p>
+                </article>
+            </div>
+
+            <form id="contactForm" class="apply-form contact-form" novalidate>
+                <h2>Send a Message</h2>
+                <label>Your Name<input type="text" name="name" required /></label>
+                <label>Your Email<input type="email" name="email" required /></label>
+                <label>Your Message<textarea name="message" rows="5" required></textarea></label>
+                <button class="btn btn-primary" type="submit">Send Message</button>
+                <p id="contactMessage" class="form-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
 </html>
